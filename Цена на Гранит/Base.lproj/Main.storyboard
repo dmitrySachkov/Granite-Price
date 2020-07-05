@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--StartVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartVC" customModule="Цена_на_Гранит" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oSc-xr-FUG"/>
+                        <viewControllerLayoutGuide type="bottom" id="BcM-1d-TIS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amfibolit" translatesAutoresizingMaskIntoConstraints="NO" id="wBJ-3n-PN7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cz9-87-uO7">
+                                <rect key="frame" x="20" y="106" width="280" height="136"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Длинна" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EPu-wK-m7W">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="32"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ширина" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSl-V9-Lei">
+                                        <rect key="frame" x="0.0" y="52" width="280" height="32"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Высота" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n47-0F-wRy">
+                                        <rect key="frame" x="0.0" y="104" width="280" height="32"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="KUQ-eM-LcA"/>
+                                </constraints>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3gj-sK-SoP">
+                                <rect key="frame" x="55" y="28" width="222" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.6973726455479452" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Габбро"/>
+                                    <segment title="Цветной"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOf-EJ-Kfh">
+                                <rect key="frame" x="45" y="390" width="230" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="SJt-J7-0hw"/>
+                                    <constraint firstAttribute="width" constant="230" id="nh8-TG-1yc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Рассчитать цену">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPriceBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bxb-Jk-1A7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BcM-1d-TIS" firstAttribute="top" secondItem="yOf-EJ-Kfh" secondAttribute="bottom" constant="20" id="A1u-Mm-J66"/>
+                            <constraint firstItem="wBJ-3n-PN7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HgB-Sk-BKx"/>
+                            <constraint firstItem="cz9-87-uO7" firstAttribute="top" secondItem="3gj-sK-SoP" secondAttribute="bottom" constant="50" id="M3y-W4-chL"/>
+                            <constraint firstItem="3gj-sK-SoP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="39" id="NGQ-Sj-bG4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3gj-sK-SoP" secondAttribute="trailing" constant="27" id="P4h-pz-j0E"/>
+                            <constraint firstItem="cz9-87-uO7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RjT-68-5ff"/>
+                            <constraint firstItem="3gj-sK-SoP" firstAttribute="top" secondItem="oSc-xr-FUG" secondAttribute="bottom" constant="8" symbolic="YES" id="XPM-AX-w4W"/>
+                            <constraint firstItem="yOf-EJ-Kfh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fee-EE-TJr"/>
+                            <constraint firstAttribute="bottom" secondItem="wBJ-3n-PN7" secondAttribute="bottom" id="oXj-1Z-dhm"/>
+                            <constraint firstAttribute="trailing" secondItem="wBJ-3n-PN7" secondAttribute="trailing" id="ro8-nw-VgS"/>
+                            <constraint firstItem="wBJ-3n-PN7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wpW-G6-A2j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="graniteType" destination="3gj-sK-SoP" id="Wwq-pf-mah"/>
+                        <outlet property="heightTxt" destination="n47-0F-wRy" id="xCB-4p-aDb"/>
+                        <outlet property="lengthTxt" destination="EPu-wK-m7W" id="BIn-hG-9yP"/>
+                        <outlet property="widthTxt" destination="nSl-V9-Lei" id="2ou-cV-ecp"/>
+                        <segue destination="rxC-j2-u6Z" kind="show" identifier="showPrice" id="dDX-RC-zle"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.375" y="31.25"/>
+        </scene>
+        <!--PriceVC-->
+        <scene sceneID="gBU-cj-VoT">
+            <objects>
+                <viewController id="rxC-j2-u6Z" customClass="PriceVC" customModule="Цена_на_Гранит" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8pk-Wu-YHQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="4or-eu-B7b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMi-mQ-Zxd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amfibolit" translatesAutoresizingMaskIntoConstraints="NO" id="lbt-ll-Ey8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOv-GG-Sw6">
+                                <rect key="frame" x="45" y="390" width="230" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="RO2-MF-uCD"/>
+                                    <constraint firstAttribute="height" constant="70" id="m7K-tn-rcD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Назад">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="rxC-j2-u6Z" eventType="touchUpInside" id="3ir-nG-P6R"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BOc-HB-406">
+                                <rect key="frame" x="45" y="70" width="230" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k7i-FW-QVO">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Цена:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVf-ja-EdN">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="36.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Объем:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHP-dX-fag">
+                                                <rect key="frame" x="0.0" y="56.5" width="230" height="34.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Площадь:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VU-Wp-TPk">
+                                                <rect key="frame" x="0.0" y="111" width="230" height="34.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вес:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hW-qK-MKB">
+                                                <rect key="frame" x="0.0" y="165.5" width="230" height="34.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="9Az-cN-hdO"/>
+                                            <constraint firstAttribute="height" constant="200" id="niu-uh-X7B"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="SL1-yn-ZXm"/>
+                                    <constraint firstAttribute="width" constant="230" id="bU1-up-koO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lbt-ll-Ey8" firstAttribute="top" secondItem="zMi-mQ-Zxd" secondAttribute="top" id="7sc-Xp-0cA"/>
+                            <constraint firstItem="BOc-HB-406" firstAttribute="centerX" secondItem="zMi-mQ-Zxd" secondAttribute="centerX" id="N4J-gX-HrW"/>
+                            <constraint firstItem="BOc-HB-406" firstAttribute="top" secondItem="8pk-Wu-YHQ" secondAttribute="bottom" constant="50" id="OWV-19-eba"/>
+                            <constraint firstAttribute="trailing" secondItem="lbt-ll-Ey8" secondAttribute="trailing" id="UuZ-Hb-S8p"/>
+                            <constraint firstItem="4or-eu-B7b" firstAttribute="top" secondItem="dOv-GG-Sw6" secondAttribute="bottom" constant="20" id="Xh1-LA-Jd8"/>
+                            <constraint firstItem="lbt-ll-Ey8" firstAttribute="leading" secondItem="zMi-mQ-Zxd" secondAttribute="leading" id="ceg-rq-cfh"/>
+                            <constraint firstItem="dOv-GG-Sw6" firstAttribute="centerX" secondItem="zMi-mQ-Zxd" secondAttribute="centerX" id="gQf-w5-WmU"/>
+                            <constraint firstItem="4or-eu-B7b" firstAttribute="top" secondItem="lbt-ll-Ey8" secondAttribute="bottom" id="whr-O0-g1j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="areaLbl" destination="1VU-Wp-TPk" id="xHI-vC-cBd"/>
+                        <outlet property="priceLbl" destination="QVf-ja-EdN" id="569-v0-6pw"/>
+                        <outlet property="volumeLbl" destination="AHP-dX-fag" id="xvJ-n4-HaD"/>
+                        <outlet property="weightLbl" destination="5hW-qK-MKB" id="X1y-UJ-sP3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtj-Nm-Ejs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834.375" y="31.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="amfibolit" width="800" height="600"/>
+    </resources>
+</document>
